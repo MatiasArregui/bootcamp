@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parctica de grid</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- aplicando estilos desde el propio HTML (no recomendable) -->
+    <style>
+        .row1 {
+            background-color: aquamarine;
+            margin: 10px 0;
+            padding: 40px;
+            border: 1px solid blue;
+        }
+        .columna_anidada{
+            background-color: white;
+            border: 1px solid blue;
+            padding: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<!------------------------------------ 
+Breakpoint	Class infix	Dimensions
+
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px 
+-------------------------------------->
+
+
+<body>
+    <!-- El container contiene todo el contenido del sitio web ---------------- -->
+    <div class="container-fluid">
+        <!-- Creamos la fila que va a contener las columnas------- -->
+        <div class="row row1"> 
+            <!-- Creamos la columna que va a contener el contenido -->
+            <div class="col-12 col-sm columna_anidada">
+                <h1>Hola Mundo</h1>
+                <p>Probando el uso de grid</p>
+                <button class="btn btn-primary">Ver Mas</button>
+            </div>
+            <div class="col-12 col-sm columna_anidada">
+                <h1>Hola Mundo</h1>
+                <p>Probando el uso de grid</p>
+                <button class="btn btn-primary">Ver Mas</button>
+            </div>
+            <div class="col-12 col-sm-8 columna_anidada">
+                <h1>Hola Mundo</h1>
+                <p>Probando el uso de grid</p>
+                <button class="btn btn-primary">Ver Mas</button>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col columna_anidada">
+                <h1>Columnas anidadas</h1>
+                <!-- el row-cols-3 hace que se acomoden tres columnas coupando una fila 
+                    y abajar las otras debajo -------------------------------------------------->
+                <div class="row row-cols-4">
+                    <div class="col-3 columna_anidada">
+                       <h1>columna anidada 1</h1>
+                    </div>
+                    <div class="col-3 columna_anidada">
+                        <h1>columna anidada 2</h1>
+                    </div>
+                    <div class="col-3 columna_anidada">
+                        <h1>columna anidada 3</h1>
+                     </div>
+                     <div class="col-3 columna_anidada">
+                        <h1>columna anidada 4</h1>
+                     </div>
+                     <div class="col-3 columna_anidada">
+                        <h1>columna anidada 5</h1>
+                     </div>
+                     <div class="col-3 columna_anidada">
+                        <h1>columna anidada 6</h1>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

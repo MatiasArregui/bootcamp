@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .row{
+            background-color: aquamarine;
+            margin: 5px;
+            text-align: center;
+            height: 150px;
+        }
+        .col{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- align-items-center/end/start nos permite alinear los componentes dentro de la fila -->
+    <div class="row align-items-start">
+    <!--Metodo para crear tres columnas de manera automatica 
+        .col*3 {columna #$} -->
+        <div class="col">columna #1</div>
+        <div class="col">columna #2</div>
+        <div class="col">columna #3</div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col">columnas #1</div>
+        <div class="col">columnas #2</div>
+        <div class="col">columnas #3</div>
+    </div>
+    <div class="row align-items-end">
+        <div class="col">columnas #1</div>
+        <div class="col">columnas #2</div>
+        <div class="col">columnas #3</div>
+    </div>
+    <div class="row">
+        <div class="col align-self-start">columnas #1</div>
+        <div class="col align-self-center">columnas #2</div>
+        <div class="col align-self-end">columnas #3</div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

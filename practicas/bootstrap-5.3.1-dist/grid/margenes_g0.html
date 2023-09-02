@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <style>
+        .row{
+            margin: 20px;
+            background-color: aqua;
+        }
+        .contenido{
+            background-color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #4df83f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- el g-0 elimina el border o margin por defecto del boostrap -->
+        <!-- podemos establecer diferentes margenes:
+        g-0 no espaciados
+        gx-5 espaciados horizontal
+        gy-5 espaciado vertical -->
+
+        <div class="row g-0">
+            <div class="col-6">
+                <div class="contenido">
+                    columna 1
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="contenido">
+                    columna 2
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="contenido">
+                    columna 3
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="contenido">
+                    columna 4
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
